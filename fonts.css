@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'StrangerInline';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/wp-content/themes/hestia/assets/fonts/stranger-inline.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'StrangerSlim';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/wp-content/themes/hestia/assets/fonts/stranger-slim.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'StrangerSlimTexture';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/wp-content/themes/hestia/assets/fonts/stranger-slimtexture.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Stranger';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/wp-content/themes/hestia/assets/fonts/stranger.woff') format('woff');
+}

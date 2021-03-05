@@ -1,0 +1,2 @@
+ssh-copy-id -i ~/id_rsa.pub username@ip.add.ress.here
+ssh-copy-id -i ~/.ssh/id_rsa.pub lintseed@192.254.239.245
