@@ -29,8 +29,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 $product_tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if ( ! empty( $product_tabs ) ) : ?>
-
-	<div class="product-view">
+	
+ 
+	<div class="product-view accordion">
 		<?php foreach ( $product_tabs as $key => $product_tab ) : ?>
 			<div class="section--<?php echo esc_attr( $key ); ?> panel entry-content" id="tab-<?php echo esc_attr( $key ); ?>" aria-labelledby="title-<?php echo esc_attr( $key ); ?>">
 				<?php
@@ -43,5 +44,14 @@ if ( ! empty( $product_tabs ) ) : ?>
 
 		<?php do_action( 'woocommerce_product_after_tabs' ); ?>
 	</div>
+
+	<?php
+		global $product;
+		$price = $product->get_price();
+		$baleQty = $price / 13.00;
+		echo '<p class="mt-5"><img src="/wp-content/uploads/2021/03/haybale.png" class="pull-left float-left mt-3 mr-4 mb-2" width="32">This purchase supplies approximately '.number_format($baleQty, 1).' bales of hay<br><small>(Our herd consumes 1.5 bales per day on average)</small></p>';
+
+		echo '<p class="small mb-0"><em>* All sales are final.</em></p>';
+	?>
 
 <?php endif; ?>

@@ -37,11 +37,5 @@ function empty_content($str) {
 	} else {
 		the_content();
 	}
-
-
-	global $product;
-	$price = $product->get_price();
-	$baleQty = $price / 13.00;
-	echo '<p class="small"><em>This purchase supplies approximately '.number_format($baleQty, 1).' bales of hay<br><small>(Our herd consumes one bale per day on average)</small></em></p>';
-
+  	
 ?>
